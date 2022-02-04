@@ -7,4 +7,5 @@ public interface CustomerRegistration {
 
     Customer register(String name, String creditCard)
             throws AlreadyExistingCustomerException;
+            System.out.println("Ok");
 }
