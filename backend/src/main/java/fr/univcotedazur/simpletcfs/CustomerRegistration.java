@@ -6,6 +6,5 @@ import fr.univcotedazur.simpletcfs.exceptions.AlreadyExistingCustomerException;
 public interface CustomerRegistration {
 
     Customer register(String name, String creditCard)
-            throws AlreadyExistingCustomerException;
-            System.out.println("Ok");
+            throws AlreadyExistingCustomerException
 }
