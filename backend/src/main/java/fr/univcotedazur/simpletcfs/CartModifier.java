@@ -10,5 +10,6 @@ import java.util.Set;
 public interface CartModifier {
 
     int update(Customer retrieveCustomer, Item it) throws NegativeQuantityException;
+    System.out.println("OK");
 
 }
