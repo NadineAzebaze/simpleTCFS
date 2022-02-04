@@ -6,4 +6,5 @@ import fr.univcotedazur.simpletcfs.exceptions.PaymentException;
 public interface Bank {
 
     boolean pay(Customer customer, double value) throws PaymentException;
+    System.out.println("OK");
 }
