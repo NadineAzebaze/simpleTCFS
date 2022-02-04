@@ -18,9 +18,9 @@ jobs:
         run: mvn clean test
       - name: Generate the backend coverage badge
         uses: cicirello/jacoco-badge-generator@v2
-          with:
-            jacoco-csv-file: backend/target/site/jacoco/jacoco.csv
-            coverage-badge-filename: backend-jacoco.svg
+        with:
+          jacoco-csv-file: backend/target/site/jacoco/jacoco.csv
+          coverage-badge-filename: backend-jacoco.svg
       - name: Commit the backend badge (if it changed)
         run: |
           if [[ `git status --porcelain` ]]; then
