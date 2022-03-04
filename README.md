@@ -19,10 +19,10 @@ _The Cookie Factory_ (TCF) is a major bakery brand in the USA. The _Cookie on De
 
   1. [Architecture](chapters/Architecture.md)
   2. [Business Components](chapters/BusinessComponents.md)
-  3. Controllers
+  3. [Controllers](chapters/Controllers.md)
   4. [Testing](chapters/Testing.md)
   5. Persistence
-  6. AOP and monitoring
+  6. [AOP, logging, and monitoring](chapters/AOPLogging.md)
 
 ## How to use this repository
 
@@ -38,7 +38,11 @@ The first step is to build the backend and the cli. This can be done manually us
 
     mvn clean package
  
-from both folders (it will generate the corresponding jar into the target folder).
+from both folders (it will generate the corresponding jar into the target folder). Note that this comand will only run unit tests, you can use:
+
+    mvn clean verify
+    
+to run both unit and integration tests. See the page on [Testing](chapters/Testing.md#running-different-types-of-test-with-maven) for more details.
 
 To run the server (from the corresponding folder):
 
