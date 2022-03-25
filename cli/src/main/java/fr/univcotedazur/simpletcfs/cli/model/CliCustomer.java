@@ -1,21 +1,23 @@
 package fr.univcotedazur.simpletcfs.cli.model;
 
-public class Customer {
+// A cli side class being equivalent to the backend CustomerDTO, in terms of attributes
+// so that the automatic JSON (de-)/serialization will make the two compatible on each side
+public class CliCustomer {
 
-    private String id;
+    private Long id;
     private String name;
     private String creditCard;
 
-    public Customer(String name, String creditCard) {
+    public CliCustomer(String name, String creditCard) {
         this.name = name;
         this.creditCard = creditCard;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
